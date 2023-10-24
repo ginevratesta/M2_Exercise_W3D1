@@ -126,9 +126,9 @@ console.log(`L'area del rettangolo è di: ${resultArea}`);
  Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(`ESERCIZIO 2.
+console.log(`\nESERCIZIO 2.
 Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
-Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.`);
+Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.\n`);
 
 function crazyDiff(number) {
   const absoluteNumber = Math.abs(number - 19); //funzione che restituisce il valore assoluto di un numero
@@ -142,19 +142,20 @@ console.log(absoluteResult);
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
  La funzione deve controllare che tale parametro sia un multiplo di 3 o di 7, e in tal caso tornare true; altrimenti deve tornare false.
  SUGGERIMENTO: operatore modulo
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
