@@ -105,9 +105,6 @@ e ritorna un array contenente n numeri random contenuti tra 0 e 10.\n`);
 
 
 
-
-
-
 //EXTRA:
 /* ESERCIZIO 1
  Scrivi una funzione chiamata "area" che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
@@ -117,13 +114,12 @@ console.log(`\nESERCIZI EXTRA:
 ESERCIZIO 1.
 Scrivi una funzione chiamata "area" che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.\n`);
 
-function area(l1, l2){
-    return l1 * l2
+function area(l1, l2) {
+  return l1 * l2;
 }
 
 let resultArea = area(34, 53);
 console.log(`L'area del rettangolo è di: ${resultArea}`);
-
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
@@ -132,18 +128,15 @@ console.log(`L'area del rettangolo è di: ${resultArea}`);
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log(`ESERCIZIO 2.
 Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
-Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.`)
+Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.`);
 
-function crazyDiff(){}
+function crazyDiff(number) {
+  const absoluteNumber = Math.abs(number - 19); //funzione che restituisce il valore assoluto di un numero
+  return absoluteNumber > 19 ? absoluteNumber * 3 : absoluteNumber; //operatore ternario per eseguire la condizione
+}
 
-
-
-
-
-
-
-
-
+let absoluteResult = crazyDiff(30);
+console.log(absoluteResult);
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
