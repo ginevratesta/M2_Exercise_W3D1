@@ -48,10 +48,12 @@ console.log(`\nESERCIZIO 3
 Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).\n`);
 
 function reverseString(reverse) {
-  return reverse.split("").reverse().join("");
-  /* .split = dividiamo la stringa in un array di caratteri
-       .reverse = invertiamo l'ordine dei caratteri nell'array
-       .join = l'array ritorna ad essere una stringa unendo insieme i caratteri  */
+    let array = reverse.split("");
+    let arrayReverse = [];
+  for(let i = array.length -1; i >= 0; i --){
+    arrayReverse.push(array[i])
+  }
+  return arrayReverse.join("");
 }
 
 let toReverse = reverseString(`EPICODE`);
