@@ -100,7 +100,7 @@ console.log(`Esercizio eseguito usando .map: ${finalResult}`);
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log(`\nESERCIZIO 5. 
 Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n 
-e ritorna un array contenente n numeri random contenuti tra 0 e 10.`)
+e ritorna un array contenente n numeri random contenuti tra 0 e 10.\n`);
 
 
 
@@ -112,15 +112,38 @@ e ritorna un array contenente n numeri random contenuti tra 0 e 10.`)
 /* ESERCIZIO 1
  Scrivi una funzione chiamata "area" che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(`\nESERCIZI EXTRA:
+ESERCIZIO 1.
+Scrivi una funzione chiamata "area" che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.\n`);
+
+function area(l1, l2){
+    return l1 * l2
+}
+
+let resultArea = area(34, 53);
+console.log(`L'area del rettangolo è di: ${resultArea}`);
+
 
 /* ESERCIZIO 2
  Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
  Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(`ESERCIZIO 2.
+Scrivi una funzione chiamata "crazyDiff" che calcola la differenza assoluta tra un numero fornito e 19.
+Se il valore calcolato è più grande di 19, la funzione deve tornare tale risultato moltiplicato per 3.`)
+
+function crazyDiff(){}
+
+
+
+
+
+
+
+
+
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
