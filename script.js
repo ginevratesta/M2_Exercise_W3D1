@@ -48,8 +48,8 @@ console.log(`\nESERCIZIO 3
 Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).\n`);
 
 function reverseString(reverse) {
-  return reverse.split("").reverse().join(""); 
-    /* .split = dividiamo la stringa in un array di caratteri
+  return reverse.split("").reverse().join("");
+  /* .split = dividiamo la stringa in un array di caratteri
        .reverse = invertiamo l'ordine dei caratteri nell'array
        .join = l'array ritorna ad essere una stringa unendo insieme i caratteri  */
 }
@@ -65,28 +65,48 @@ console.log(`Questo è il risultato del terzo esercizio: ${toReverse}`);
 console.log(`\nESERCIZIO 4. 
 Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.\n`);
 
+//USANDO UN CICLO
+function upperFirst(sentence) {
+  let words = sentence.split(" "); //dividiamo la stringa sentence in un array di parole con .split
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    words[i] = word.charAt(0).toUpperCase() + word.slice(1); //.charAt() viene utilizzato per selezionare un carattere specifico all'interno di una stringa
+  } //.slice() estrae una parte da una stringa o da un array
 
-function upperFirst(string) {
-    let words = string.split(" "); // Dividiamo la stringa in un array di parole
-
-    // Usiamo map per elaborare ogni parola
-    let result = words.map(function (word) {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-    });
-
-    // Rimettiamo insieme le parole in una nuova stringa
-    return result.join(" ");
+  return words.join(" "); //rimettiamo insieme le stringhe dentro l'array e facciamole tornare una stringa unica
 }
 
-let finalResult = upperFirst("una splendida giornata di sole");
-console.log(finalResult);
+let finalSentence = upperFirst(`oggi potrebbe piovere`);
+console.log(`Esercizio eseguito usando un ciclo: ${finalSentence}`);
 
+//USANDO .MAP
+function upperFirst2(string) {
+  let words = string.split(" "); // Dividiamo la stringa in un array di parole usando .split
+
+  // Usiamo map per elaborare ogni parola ed apportare a ciascuna le modifiche assegnate da .toUpperCase
+  let result = words.map(function (word) {
+    return word.charAt(0).toUpperCase() + word.slice(1); //.charAt viene utilizzato per selezionare un carattere specifico all'interno di una stringa
+  }); //.slice() estrae una parte da una stringa o da un array
+
+  return result.join(" "); //rimettiamo insieme le stringhe dentro l'array e facciamole tornare una stringa unica
+}
+
+let finalResult = upperFirst2("una splendida giornata di sole");
+console.log(`Esercizio eseguito usando .map: ${finalResult}`);
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(`\nESERCIZIO 5. 
+Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n 
+e ritorna un array contenente n numeri random contenuti tra 0 e 10.`)
+
+
+
+
+
+
 
 //EXTRA:
 /* ESERCIZIO 1
