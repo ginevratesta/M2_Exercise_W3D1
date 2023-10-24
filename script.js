@@ -102,8 +102,16 @@ console.log(`\nESERCIZIO 5.
 Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n 
 e ritorna un array contenente n numeri random contenuti tra 0 e 10.\n`);
 
-
-
+function giveMeRandom(n){
+    let randomNumbers = [];
+    for (let i = 0; i < n; i++) {
+      let randomNumber = Math.floor(Math.random() * 11); // math.random genera un numero casuale tra 0 e 10 e math.floor fa si che escano solo numeri interi
+      randomNumbers.push(randomNumber);
+    }
+    return randomNumbers;
+}
+let randomResults = giveMeRandom(4);
+console.log(randomResults);
 
 //EXTRA:
 /* ESERCIZIO 1
