@@ -30,10 +30,10 @@ Scrivi una funzione chiamata "boundary", che accetta un numero intero come param
 e ritorna true se tale parametro è incluso tra 20 e 100 (incluso) o se è esattamente uguale a 400.\n`);
 
 function boundary(z) {
-  if (z > 20 && z <= 100) {
+  if (z > 20 && z <= 100 || z ===  400) {
     return true;
-  } else if ((z = 400)) {
-    return `Il valore della variabile 'comparison' equivale a 400`;
+  } else {
+    return false;
   }
 }
 let comparison = boundary(400);
