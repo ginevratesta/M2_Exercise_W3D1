@@ -153,8 +153,23 @@ console.log(absoluteResult);
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(`\nESERCIZIO 3. 
+Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
+La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, 
+ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.\n`);
+
+function codify(s){
+   if(s.indexOf(`code`) === 0){
+    return s
+   }    
+   else{
+    return `code ` + s
+   }
+}
 
 
+let arrayString = codify(`in questa stringa la prima parola non è code`);
+console.log(arrayString)
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
