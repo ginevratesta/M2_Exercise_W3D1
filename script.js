@@ -185,8 +185,8 @@ console.log(`Questo è il risultato del quarto esercizio: ${positiveNumber}`);
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log(
-  `\nScrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.\n`
+console.log(`\nESERCIZIO 5.
+Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.\n`
 );
 
 function cutString(string) {
