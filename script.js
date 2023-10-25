@@ -187,7 +187,7 @@ SUGGERIMENTO: operatore modulo\n`)
 console.log(`\nScrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.\n`)
 
 function cutString(string){
-    return string.slice(1, -1) //Eliminiamo il primo e l'ultimo carattere dalla stringa
+    return string.slice(1, -1) //Eliminiamo il primo e l'ultimo carattere dalla stringa con .slice()
 }
 
  let newPhrase = cutString(`ulteriore stringa a scopo dimostrativo per esercitarsi`);
