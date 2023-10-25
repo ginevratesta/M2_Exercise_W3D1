@@ -10,9 +10,9 @@ La funzione deve ritornare la somma di quei due valori, ma se il loro valore è 
 
 function crazySum(x, y) {
   if (x === y) {
-    return (x + y) * 3;
+    return `Il valore dei due paramentri è uguale: ` + (x + y) * 3;
   } else {
-    return x + y;
+    return `Il valore dei due parametri non è uguale ` + x + y;
   }
 }
 
@@ -67,35 +67,13 @@ console.log(`Questo è il risultato del terzo esercizio: ${toReverse}`);
 console.log(`\nESERCIZIO 4. 
 Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.\n`);
 
-//USANDO UN CICLO
-function upperFirst(sentence) {
-  let words = sentence.split(" "); //dividiamo la stringa sentence in un array di parole con .split
-  for (let i = 0; i < words.length; i++) {
-    let word = words[i];
-    words[i] = word.charAt(0).toUpperCase() + word.slice(1); //.charAt() viene utilizzato per selezionare un carattere specifico all'interno di una stringa
-  } //.slice() estrae una parte da una stringa o da un array
-
-  return words.join(" "); //rimettiamo insieme le stringhe dentro l'array e facciamole tornare una stringa unica
-}
-
-let finalSentence = upperFirst(`oggi potrebbe piovere`);
-console.log(`Esercizio eseguito usando un ciclo: ${finalSentence}`);
-
-//USANDO .MAP
-function upperFirst2(string) {
-  let words = string.split(" "); // Dividiamo la stringa in un array di parole usando .split
-
-  // Usiamo map per elaborare ogni parola ed apportare a ciascuna le modifiche assegnate da .toUpperCase
-  let result = words.map(function (word) {
-    return word.charAt(0).toUpperCase() + word.slice(1); //.charAt viene utilizzato per selezionare un carattere specifico all'interno di una stringa
-  }); //.slice() estrae una parte da una stringa o da un array
-
-  return result.join(" "); //rimettiamo insieme le stringhe dentro l'array e facciamole tornare una stringa unica
-}
-
-let finalResult = upperFirst2("una splendida giornata di sole");
-console.log(`Esercizio eseguito usando .map: ${finalResult}`);
-
+function upperFirstWord(sentence) {
+    return sentence.charAt(0).toUpperCase() + sentence.slice(1);
+  }
+  
+  let finalSentence = upperFirstWord(`una splendida giornata di sole`);
+  console.log(`Questo è il risultato del quarto esercizio: ${finalSentence}`);
+  
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
@@ -168,7 +146,7 @@ function codify(s){
 }
 
 
-let string = codify(`in questa stringa la prima parola non è code`);
+let string = codify(`questa è una stringa`);
 console.log(`Questo è il risultato del terzo esercizio: ${string}`)
 
 /* ESERCIZIO 4
@@ -197,3 +175,13 @@ SUGGERIMENTO: operatore modulo\n`)
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(`\nScrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.\n`)
+
+function cutString(phrase){}
+
+
+
+
+
+
+ let newPhrase = phrase(`ulteriore stringa a scopo illustrativo per esercitarsi`);
