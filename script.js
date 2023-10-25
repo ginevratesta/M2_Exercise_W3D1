@@ -16,7 +16,7 @@ function crazySum(x, y) {
   }
 }
 
-let result = crazySum(45, 45);
+const result = crazySum(45, 45);
 
 console.log(`Questo è il risultato del primo esercizio: ${result}.`);
 
@@ -36,7 +36,7 @@ function boundary(z) {
     return false;
   }
 }
-let comparison = boundary(400);
+const comparison = boundary(400);
 console.log(`Questo è il risultato del secondo esercizio: ${comparison}`);
 
 /* ESERCIZIO 3
@@ -56,7 +56,7 @@ function reverseString(reverse) {
   return arrayReverse.join("");
 }
 
-let toReverse = reverseString(`EPICODE`);
+const toReverse = reverseString(`EPICODE`);
 console.log(`Questo è il risultato del terzo esercizio: ${toReverse}`);
 
 /* ESERCIZIO 4
@@ -83,7 +83,7 @@ function upperFirstWord(sentence) {
   return words.join(" "); // Rimettiamo di nuovo insieme le parole in una stringa
 }
 
-let finalSentence = upperFirstWord(`una splendida giornata di sole`);
+const finalSentence = upperFirstWord(`una splendida giornata di sole`);
 console.log(`Questo è il risultato del quarto esercizio: ${finalSentence}`);
 
 /* ESERCIZIO 5
@@ -102,7 +102,7 @@ function giveMeRandom(n) {
   }
   return randomNumbers;
 }
-let randomResults = giveMeRandom(4);
+const randomResults = giveMeRandom(4);
 console.log(randomResults);
 
 //EXTRA:
@@ -118,7 +118,7 @@ function area(l1, l2) {
   return l1 * l2;
 }
 
-let resultArea = area(34, 53);
+const resultArea = area(34, 53);
 console.log(`L'area del rettangolo è di: ${resultArea}`);
 
 /* ESERCIZIO 2
@@ -135,7 +135,7 @@ function crazyDiff(number) {
   return absoluteNumber > 19 ? absoluteNumber * 3 : absoluteNumber; //operatore ternario per eseguire la condizione
 }
 
-let absoluteResult = crazyDiff(30);
+const absoluteResult = crazyDiff(30);
 console.log(absoluteResult);
 
 /* ESERCIZIO 3
@@ -157,7 +157,7 @@ function codify(s) {
   }
 }
 
-let string = codify(`questa è una stringa`);
+const string = codify(`questa è una stringa`);
 console.log(`Questo è il risultato del terzo esercizio: ${string}`);
 
 /* ESERCIZIO 4
@@ -178,7 +178,7 @@ function check3and7(n) {
   }
 }
 
-let positiveNumber = check3and7(70);
+const positiveNumber = check3and7(70);
 console.log(`Questo è il risultato del quarto esercizio: ${positiveNumber}`);
 
 /* ESERCIZIO 5
@@ -193,7 +193,7 @@ function cutString(string) {
   return string.slice(1, -1); //Eliminiamo il primo e l'ultimo carattere dalla stringa con .slice()
 }
 
-let newPhrase = cutString(
+const newPhrase = cutString(
   `ulteriore stringa a scopo dimostrativo per esercitarsi`
 );
 console.log(`Questo è il risultato del quinto esercizio: ${newPhrase}`);
