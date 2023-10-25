@@ -168,8 +168,8 @@ function codify(s){
 }
 
 
-let arrayString = codify(`in questa stringa la prima parola non è code`);
-console.log(arrayString)
+let string = codify(`in questa stringa la prima parola non è code`);
+console.log(`Questo è il risultato del terzo esercizio: ${string}`)
 
 /* ESERCIZIO 4
  Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
@@ -177,8 +177,21 @@ console.log(arrayString)
  SUGGERIMENTO: operatore modulo
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(`\nESERCIZIO 4.
+Scrivi una funzione chiamata "check3and7" la quale accetta un numero intero positivo come parametro.
+La funzione deve controllare che tale parametro sia un multiplo di 3 o di 7, e in tal caso tornare true; altrimenti deve tornare false.
+SUGGERIMENTO: operatore modulo\n`)
+ function check3and7(n){
+    if(n % 3 === 0 || n % 7 === 0){
+        return true
+    }
+    else{
+        return false
+    }
+ }
 
-
+ let positiveNumber = check3and7(70);
+ console.log(`Questo è il risultato del quarto esercizio: ${positiveNumber}`);
 
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
